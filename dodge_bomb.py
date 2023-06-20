@@ -22,7 +22,9 @@ def check_bound(rect:pg.Rect) -> tuple[bool, bool]:
 def kk_k():
     #演習1の関数
     kk_img0 = pg.transform.rotozoom(pg.image.load("ex02/fig/3.png"), 0, 2.0)
+    #左を向いているこうかとんのロード
     kk_img1 = pg.transform.flip(kk_img0, True, False)
+    #右を向いているこうかとんの作成
     return{(0, 0):kk_img0, 
            (-5, 0):kk_img0,
            (-5, -5):pg.transform.rotozoom(kk_img0, -45, 1.0),
